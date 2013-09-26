@@ -12,7 +12,7 @@
         }, options),
         previous = {};
 
-      if ( $('#totl-overlay').length > 0 ) {
+      if ( $('#totl-overlay').length == 0 ) {
 
         $('body').append($('<div id="totl-overlay"></div>'));
 
