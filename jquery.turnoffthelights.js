@@ -5,7 +5,6 @@
     turnoffthelights: function(options) {
 
       var
-        overlay  = $('<div id="totl-overlay"></div>');
         settings = $.extend({
           darkness   : 0.9,
           scrollLock : false,
@@ -13,7 +12,11 @@
         }, options),
         previous = {};
 
-      $('body').append(overlay);
+      if ( $('#totl-overlay').length > 0 ) {
+
+        $('body').append($('<div id="totl-overlay"></div>'));
+
+      }
 
       return this.each(function() {
 
