@@ -72,7 +72,7 @@
 
         // callback
 
-          if settings.callback {
+          if (settings.callback) {
             settings.callback();
           }
 
